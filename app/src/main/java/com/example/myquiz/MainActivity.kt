@@ -1,7 +1,6 @@
 package com.example.myquiz
 
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.util.Log
@@ -26,7 +25,6 @@ class MainActivity : AppCompatActivity() {
     private var currentQuestionIndex = 0
     private var correctAnswers = 0
     private var timer: CountDownTimer? = null
-    private lateinit var preferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,9 +35,7 @@ class MainActivity : AppCompatActivity() {
         nextButton = findViewById(R.id.nextButton)
         timerTextView = findViewById(R.id.timerTextView)
 
-        preferences = getSharedPreferences("quiz_preferences", MODE_PRIVATE)
         loadQuestions()
-        restoreState()
         startTimer()
         displayQuestion()
 
@@ -127,22 +123,5 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("totalQuestions", questions.size)
         startActivity(intent)
         finish()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        saveState()
-    }
-
-    private fun saveState() {
-        val editor = preferences.edit()
-        editor.putInt("currentQuestionIndex", currentQuestionIndex)
-        editor.putInt("correctAnswers", correctAnswers)
-        editor.apply()
-    }
-
-    private fun restoreState() {
-        currentQuestionIndex = preferences.getInt("currentQuestionIndex", 0)
-        correctAnswers = preferences.getInt("correctAnswers", 0)
     }
 }
