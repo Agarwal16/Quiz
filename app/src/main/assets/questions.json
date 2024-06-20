@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "choices": ["Paris", "London", "Berlin", "Madrid"],
+    "answer": "Paris"
+  },
+  {
+    "question": "What is 2 + 2?",
+    "choices": ["3", "4", "5", "6"],
+    "answer": "4"
+  },
+  {
+    "question": "What is the largest planet in our Solar System?",
+    "choices": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "answer": "Jupiter"
+  },
+  {
+    "question": "What is the chemical symbol for water?",
+    "choices": ["H2O", "O2", "H2", "CO2"],
+    "answer": "H2O"
+  },
+  {
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "choices": ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"],
+    "answer": "William Shakespeare"
+  },
+  {
+    "question": "What is the speed of light?",
+    "choices": ["299,792 km/s", "150,000 km/s", "1,080,000 km/s", "300,000 km/s"],
+    "answer": "299,792 km/s"
+  },
+  {
+    "question": "Which element has the atomic number 1?",
+    "choices": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
+    "answer": "Hydrogen"
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "choices": ["Tokyo", "Beijing", "Seoul", "Bangkok"],
+    "answer": "Tokyo"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "choices": ["Earth", "Mars", "Venus", "Jupiter"],
+    "answer": "Mars"
+  },
+  {
+    "question": "What is the largest mammal?",
+    "choices": ["Elephant", "Blue Whale", "Great White Shark", "Giraffe"],
+    "answer": "Blue Whale"
+  }
+]
